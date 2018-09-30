@@ -15,11 +15,12 @@ module.exports = function solveEquation(equation) {
       if (arr[i + 1] == "-") {
         c = -Number(arr[i + 2]);
       } else {
-        c = Nubmer(arr[i + 2]);
-      }
+        c = Number(arr[i + 2]);
+      };
     }
+
   }
-  
+
   delta = b * b - 4 * a * c;
   x1 = Math.round((-b + Math.sqrt(delta)) / (a * 2));
   x2 = Math.round((-b - Math.sqrt(delta)) / (a * 2));
